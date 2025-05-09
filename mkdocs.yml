@@ -3,3 +3,6 @@ site_name: Testing MkDocs
 nav:
   - Home: index.md
   - About: about.md
+
+# theme: readthedocs
+# Commented because I like the built-in theme more
