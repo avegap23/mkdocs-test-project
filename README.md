@@ -11,7 +11,7 @@ If you already have Python installed, pip is most likely already installed. Howe
 ```
 pip install --upgrade pip
 ```
-If you need to install pip, download the <a target="_blank" href="https://bootstrap.pypa.io/get-pip.py">get-pip.py script.</a> *(Right click > "save as..." to download the .py file).* Then, run the script:
+If you need to install pip, [download the get-pip.py script](https://bootstrap.pypa.io/get-pip.py). *(Right click > "save as..." to download the .py file).* Then, run the script:
 
 **Linux/MacOS:**
 
@@ -54,7 +54,7 @@ You should now be inside the virtual enviroment. You can exit the virtual enviro
 deactivate
 ```
 
-Now, lastly, install MkDocs using pip. This project uses a third party theme so you would like to install that too using the second command:
+Now, lastly, install MkDocs using pip. This project uses a third party theme, [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), so you would like to install that too using the second command:
 ```
 pip install mkdocs
 pip install mkdocs-material
