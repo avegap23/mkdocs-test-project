@@ -64,4 +64,4 @@ Alternatively, you can install both of them as dependencies listed in `requireme
 ```
 pip install -r requirements.txt
 ```
-This way you will have my exact same virtual environment, with the exact same versions of mkdocs and mkdocs-material.
+This way you will have a virtual enviroment with my same mkdocs and mkdocs-material versions.
