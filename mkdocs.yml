@@ -4,5 +4,12 @@ nav:
   - Home: index.md
   - About: about.md
 
+# To use the default theme, simply don't write the theme configuration line (you can test this by commenting the lines right below)
+theme:
+  name: material # <-- This is a third party theme. To install it, follow the README.md
+
+# You can also specify the theme in one single line:
+# theme: material
+
+# Aside from the default one, there is another preinstalled theme you can use right out of the box:
 # theme: readthedocs
-# Commented because I like the built-in theme more

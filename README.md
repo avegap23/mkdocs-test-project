@@ -2,7 +2,7 @@
 
 ## 1. Installation
 
-### ⚠️ Python and the pip package manager are required
+### 1.1. Installing Python and pip
 #### Download Python:
 https://www.python.org/downloads/
 
@@ -14,15 +14,54 @@ pip install --upgrade pip
 If you need to install pip, download the <a target="_blank" href="https://bootstrap.pypa.io/get-pip.py">get-pip.py script.</a> *(Right click > "save as..." to download the .py file).* Then, run the script:
 
 **Linux/MacOS:**
+
+ℹ️ *Debian-based Linux distributions may need to use `python3` (or whatever version of Python you have installed) instead of just `python`.*
 ```
 python get-pip.py
 ```
 **Windows:**
+
+ℹ️ *`python` works too on Windows*
 ```
 py get-pip.py
 ```
 
-### Installing MkDocs using pip:
+### 1.2. Installing MkDocs using pip:
+
+First, it's recommended to install and contain Python packages per project using a virtual environment (venv).
+
+Start by creating a new virtual environment (locate yourself in the root directory of the project before executing the command):
+```
+python -m venv .mynewvenv
+```
+
+ℹ️ *`.mynewvenv` being the name of your virtual environment, you can name it whatever you want. I personally like making the directory hidden too.*
+
+Now activate it by running:
+
+```
+# Linux/macOS
+source venv/bin/activate
+
+# Windows (Command Prompt)
+.\.venv\Scripts\activate.bat
+
+# Windows (Powershell)
+.\.venv\Scripts\Activate.ps1
+```
+You should now be inside the virtual enviroment. You can exit the virtual environment at any time by running:
+```
+deactivate
+```
+
+Now, lastly, install MkDocs using pip. This project uses a third party theme so you would like to install that too using the second command:
 ```
 pip install mkdocs
+pip install mkdocs-material
 ```
+
+Alternatively, you can install both of them as dependencies listed in `requirements.txt` by running:
+```
+pip install -r requirements.txt
+```
+This way you will have my exact same virtual environment, with the exact same versions of mkdocs and mkdocs-material.
