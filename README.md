@@ -41,18 +41,19 @@ Now activate it by running:
 
 ```
 # Linux/macOS
-source venv/bin/activate
+source .mynewvenv/bin/activate
 
 # Windows (Command Prompt)
-.\.venv\Scripts\activate.bat
+.\.mynewvenv\Scripts\activate.bat
 
 # Windows (Powershell)
-.\.venv\Scripts\Activate.ps1
+.\.mynewvenv\Scripts\Activate.ps1
 ```
 You should now be inside the virtual enviroment. You can exit the virtual environment at any time by running:
 ```
 deactivate
 ```
+And enter it again executing the previous command.
 
 Now, lastly, install MkDocs using pip. This project uses a third party theme, [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), so you would like to install that too using the second command:
 ```
